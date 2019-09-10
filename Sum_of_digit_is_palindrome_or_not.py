@@ -1,0 +1,16 @@
+num=int(input())
+sum=rev=0
+if(num>1):
+    while(num!=0):
+        dig=num%10
+        sum=sum+dig
+        num=num//10
+    temp=sum
+    while(temp!=0):
+        di=temp%10
+        rev=rev*10+di
+        temp=temp//10
+    if(sum==rev):
+        print("YES")
+    else:
+        print("NO")
